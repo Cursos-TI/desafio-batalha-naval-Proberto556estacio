@@ -10,6 +10,22 @@ int main() {
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
+    int tabuleiro [10] [10];    //Declaração a matriz de números inteiros 10 x 10
+
+        for (int i = 0; i < 10; i++)        //Definindo as linhas
+        {                                   
+            for (int j = 0; j < 10; i++)    //Definindo as colunas
+            {
+                tabuleiro [i] [j] = 0;
+                
+            }
+        }
+        
+
+
+
+
+
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.

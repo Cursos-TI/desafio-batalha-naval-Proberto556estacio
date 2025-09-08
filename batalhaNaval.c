@@ -25,7 +25,7 @@ int main() {
             printf("Navio na vertical: %d, %d \n", i, 7);
         }
         
-        //Tabuleiro Definido - 0 representa "Água" e 3 representa "Navios"
+        //Tabuleiro Definido - 0 representa "Água" e 3 representa partes dos "Navios"
         printf("\nTabuleiro Batalha Naval\n");
 
         for (int i = 0; i < 10; i++)        //Definindo as linhas do tabuleiro

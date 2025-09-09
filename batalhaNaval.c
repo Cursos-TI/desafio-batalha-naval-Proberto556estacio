@@ -16,13 +16,13 @@ int main() {
         for (int j = 3; j <= 5; j++)     //Definindo posição Navio Horizontal - linha 2 fixa, coluna 3 a 5 
         {
             tabuleiro [2] [j] = 3;
-            printf("Návio na horizontal: linha %d, coluna %d \n", 2, j);
+            printf("Návio 1 na horizontal: linha %d, coluna %d \n", 2, j);
         }
         
         for (int i = 4; i <= 6; i++)     //Definindo posição Navio Vertical - coluna 7 fixa, linha 4 a 6       
         {
             tabuleiro [i] [7] = 3;
-            printf("Navio na vertical: linha %d, coluna %d \n", i, 7);
+            printf("Navio 2 na vertical: linha %d, coluna %d \n", i, 7);
         }
         
         //Tabuleiro Definido - 0 representa "Água" e 3 representa partes dos "Navios"

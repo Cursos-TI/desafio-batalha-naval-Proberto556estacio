@@ -13,13 +13,13 @@ int main() {
     int tabuleiro [10] [10] = {0};    //Declaração a matriz de números inteiros (10 x 10) inicializando com 0.
 
         printf("\nPosicionamento dos Navios\n");
-        for (int j = 3; j <= 5; j++)     //Definindo posição Navio Horizontal - linha 2, coluna 3 a 5 
+        for (int j = 3; j <= 5; j++)     //Definindo posição Navio Horizontal - linha 2 fixa, coluna 3 a 5 
         {
             tabuleiro [2] [j] = 3;
             printf("Návio na horizontal: %d, %d \n", 2, j);
         }
         
-        for (int i = 4; i <= 6; i++)     //Definindo posição Navio Vertical - coluna 7, linha 4 a 6       
+        for (int i = 4; i <= 6; i++)     //Definindo posição Navio Vertical - coluna 7 fixa, linha 4 a 6       
         {
             tabuleiro [i] [7] = 3;
             printf("Navio na vertical: %d, %d \n", i, 7);

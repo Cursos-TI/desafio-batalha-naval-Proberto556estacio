@@ -6,6 +6,8 @@ int main() {
     int tabuleiro [10] [10] = {0};
     
     //Posição návio - Horizontal
+
+    printf("\nDefinição de Linhas e Colunas\n");
     for (int j = 3; j <= 5; j++)  
     {
         tabuleiro [2] [j] = 3;
@@ -21,12 +23,12 @@ int main() {
         
     // Tabuleiro de Batalha Naval - 
 
-
+    printf("\nTabuleiro Batalha Naval\n");
     for (int i = 0; i < 10; i++) //Definição da linha no tabuleiro
     {
         for (int j = 0; j < 10; j++)  //Definição da coluna no tabuleiro
         {
-            printf("%d", tabuleiro [i] [j]);
+            printf("%d ", tabuleiro [i] [j]);
         }
         printf("\n");
     }

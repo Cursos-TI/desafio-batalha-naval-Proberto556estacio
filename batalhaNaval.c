@@ -10,7 +10,7 @@
 
 int main() {
     
-    int tabuleiro [10] [10] = {0};    //Declaração a matriz de números inteiros (10 x 10) inicializando com 0.
+    int tabuleiro [LINHA] [COLUNA] = {0};    //Declaração a matriz de números inteiros (10 x 10) inicializando com 0.
 
         //Exibe título "Posicionanento dos navios"
         printf("\nPosicionamento dos Navios\n");

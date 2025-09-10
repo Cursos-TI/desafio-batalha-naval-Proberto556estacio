@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#define LINHA 10
+#define COLUNA 10
+
+
 // Desafio Batalha Naval - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
 // Siga os comentários para implementar cada parte do desafio.
@@ -40,9 +44,9 @@ int main() {
         //Tabuleiro Definido - 0 (zero) representa água e 3 (três) representa partes dos navios.
         printf("\nTabuleiro Batalha Naval\n");
 
-        for (int i = 0; i < 10; i++)        //Definindo as linhas do tabuleiro
+        for (int i = 0; i < LINHA; i++)        //Definindo as linhas do tabuleiro
         {                                   
-            for (int j = 0; j < 10; j++)    //Definindo as colunas do tabuleiro
+            for (int j = 0; j < COLUNA; j++)    //Definindo as colunas do tabuleiro
             {
                 printf("%d ", tabuleiro [i] [j]);   
             }

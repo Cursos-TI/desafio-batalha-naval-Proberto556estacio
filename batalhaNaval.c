@@ -5,26 +5,29 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
-
+    
     int tabuleiro [10] [10] = {0};    //Declaração a matriz de números inteiros (10 x 10) inicializando com 0.
 
+        //Exibe título "Posicionanento dos navios"
         printf("\nPosicionamento dos Navios\n");
-        for (int j = 3; j <= 5; j++)     //Definindo posição Navio Horizontal - linha 2 fixa, coluna 3 a 5 
+
+        // Navio 1 - posição horizontal - linha 2 fixa, coluna 3 a 5
+        for (int j = 3; j <= 5; j++)    
         {
             tabuleiro [2] [j] = 3;
             printf("Návio 1 na horizontal: linha %d, coluna %d \n", 2, j);
         }
         
-        for (int i = 4; i <= 6; i++)     //Definindo posição Navio Vertical - coluna 7 fixa, linha 4 a 6       
+        // Navio 2 - posicionamento vertical - coluna 7 fixa, linha 4 a 6
+        for (int i = 4; i <= 6; i++)            
         {
             tabuleiro [i] [7] = 3;
             printf("Navio 2 na vertical: linha %d, coluna %d \n", i, 7);
         }
         
+        // Navio 3 - posicionamento diagonal principal
+        
+
         //Tabuleiro Definido - 0 representa "Água" e 3 representa partes dos "Navios"
         printf("\nTabuleiro Batalha Naval\n");
 
@@ -37,7 +40,11 @@ int main() {
             printf("\n");
         }
 
-
+    
+    // Nível Novato - Posicionamento dos Navios
+    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
+    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
+    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.

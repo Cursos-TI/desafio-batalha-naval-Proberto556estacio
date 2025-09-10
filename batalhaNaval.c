@@ -12,23 +12,32 @@ int main() {
         printf("\nPosicionamento dos Navios\n");
 
         // Navio 1 - posição horizontal - linha 2 fixa, coluna 3 a 5
-        for (int j = 3; j <= 5; j++)    
-        {
+        for (int j = 3; j <= 5; j++) {
             tabuleiro [2] [j] = 3;
             printf("Návio 1 na horizontal: linha %d, coluna %d \n", 2, j);
         }
         
         // Navio 2 - posicionamento vertical - coluna 7 fixa, linha 4 a 6
-        for (int i = 4; i <= 6; i++)            
-        {
+        for (int i = 4; i <= 6; i++) {
             tabuleiro [i] [7] = 3;
             printf("Navio 2 na vertical: linha %d, coluna %d \n", i, 7);
         }
         
         // Navio 3 - posicionamento diagonal principal
+        for (int i = 3; i <= 5; i++) { 
+            tabuleiro [i] [i] = 3; 
+            printf("Navio 3 na diagonal principal: linha %d, coluna %d\n", i, i);
+        }
         
+        // Navio 4 - posicionamento diagonal secundária
+        for (int i = 2; i <= 4; i++) {
+            int j = 9 - i;
+            tabuleiro [i] [j] = 3;
+            printf("Navio 4 na diagonat secundária: linha %d, coluna %d\n", i, j);
+        }
+                
 
-        //Tabuleiro Definido - 0 representa "Água" e 3 representa partes dos "Navios"
+        //Tabuleiro Definido - 0 (zero) representa água e 3 (três) representa partes dos navios.
         printf("\nTabuleiro Batalha Naval\n");
 
         for (int i = 0; i < 10; i++)        //Definindo as linhas do tabuleiro

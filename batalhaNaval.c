@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define LINHA 10
 #define COLUNA 10
 

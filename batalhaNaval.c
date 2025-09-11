@@ -36,17 +36,17 @@ int main() {
         for (int i = 2; i <= 4; i++) {
             int j = 9 - i;
             tabuleiro [i] [j] = 3;
-            printf("Navio 4 na diagona secundária: linha %d, coluna %d\n", i, j);
+            printf("Navio 4 na diagonal secundária: linha %d, coluna %d\n", i, j);
         }
 
         //Implementando Habilidade Cone
         int cone[3][5] = {0};
+
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 5; j++) {
-                if (j >= 2 -i && j <= 2 + i);
-                {
-                printf("%\n ");
-                }
+                if (j >= 2 -i && j <= 2 + i) {
+                    cone[i][j] = 1;
+                }                
             }
         }
         
@@ -54,7 +54,7 @@ int main() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 5; j++) {
                 printf("%d ", cone[i][j]);
-        }
+            }
                 printf("%d ");
         }
         

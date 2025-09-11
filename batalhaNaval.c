@@ -39,7 +39,8 @@ int main() {
             printf("Navio 4 na diagonal secundária: linha %d, coluna %d\n", i, j);
         }
 
-        //Implementando Habilidade Cone
+        //Implementando Habilidade Cone com matriz 3x5
+        
         int cone[3][5] = {0};
 
         for (int i = 0; i < 3; i++) {
@@ -50,15 +51,15 @@ int main() {
             }
         }
         
-        // Mostrando matriz do cone
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 5; j++) {
-                printf("%d ", cone[i][j]);
-            }
-                printf("%d ");
-        }
+        //Definindo origem do cone no tabuleiro
+        int coneLinha = 5;
+        int coneColuna = 5;
+
+        printf("\nAplicando habilidade Cone no tabuleiro (origem: linha %d, coluna %d)\n", coneLinha, coneColuna);
+
+    
         
-               
+                  
 
         //Tabuleiro Definido - 0 (zero) representa água e 3 (três) representa partes dos navios.
         printf("\nTabuleiro Batalha Naval\n");

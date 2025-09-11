@@ -39,6 +39,8 @@ int main() {
             printf("Navio 4 na diagonal secundária: linha %d, coluna %d\n", i, j);
         }
 
+        //Tema 5 - Mestre
+        
         //Implementando Habilidade Cone com matriz 3x5
         
         int cone[3][5] = {0};

@@ -51,6 +51,7 @@ int main() {
             printf("\n");
         }
 
+        
     
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
